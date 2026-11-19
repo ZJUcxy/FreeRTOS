@@ -38,3 +38,6 @@ Desktop.ini
 .env.*
 *.pem
 credentials.*
+
+# Local transfer artifacts
+*.bundle
