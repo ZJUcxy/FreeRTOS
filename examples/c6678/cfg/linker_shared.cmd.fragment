@@ -1,0 +1,14 @@
+/* 粘贴到 C6678 链接命令文件中的共享段示例 */
+
+MEMORY
+{
+    MSMC_SHARED : origin = 0x0C000000, length = 0x00010000
+}
+
+SECTIONS
+{
+    .shared_msmc > MSMC_SHARED
+    {
+        *(.shared_msmc)
+    }
+}
